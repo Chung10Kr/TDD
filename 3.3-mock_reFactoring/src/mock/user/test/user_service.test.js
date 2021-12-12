@@ -3,10 +3,10 @@ const UserClient = require('../user_client');
 jest.mock('../user_client');
 
 describe('UserService', () => {
-  const loginMock = jest.fn(async () => 'success');
+  const login = jest.fn(async () => 'success');
   UserClient.mockImplementation(() => {
     return {
-      login : loginMock
+      login
     };
   });
   let userService;
