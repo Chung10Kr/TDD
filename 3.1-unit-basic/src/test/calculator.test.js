@@ -27,7 +27,7 @@ describe('Calculator', ()=>{
     const cal = new Calculator();
     cal.set(10)
     cal.multiply(2)
-    expect(cal.value).toBe(5);
+    expect(cal.value).toBe(20);
   });
 
   it('Add Should Throw an error if value is over 100',()=>{
