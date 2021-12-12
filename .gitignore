@@ -2,4 +2,13 @@
 3-Jest_Set/coverage/
 
 3.1-unit-basic/node_modules/
+3.1-unit-basic/coverage/
 
+3.2-mock/node_modules/
+3.2-mock/coverage/
+
+3.3-mock_reFactoring/node_modules/
+3.3-mock_reFactoring/coverage/
+
+5-TDD/node_modules/
+5-TDD/coverage/
