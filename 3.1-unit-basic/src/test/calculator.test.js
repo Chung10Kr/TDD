@@ -17,12 +17,27 @@ describe('Calculator', ()=>{
   
   it('Add',()=>{
     const cal = new Calculator();
+    cal.clear()
     cal.set(10)
     cal.add(10)
     expect(cal.value).toBe(20);
   });
 
-  
+  it('multiply',()=>{
+    const cal = new Calculator();
+    cal.set(10)
+    cal.multiply(2)
+    expect(cal.value).toBe(5);
+  });
+
+  it('Add Should Throw an error if value is over 100',()=>{
+    const cal = new Calculator();
+    
+    expect(()=>{
+      cal.add(101)
+    }).toThrow('Value can not be greater than 100')
+  });
+
   it('Subtract',()=>{
     const cal = new Calculator();
     /*
